@@ -1,4 +1,17 @@
 /* ============================================================
+   ACCESSIBILITY PASS (WCAG 2.1 AA) — see chat for full findings
+   - Reading, Exploration, Activity, Resolution gradients: light
+     ends darkened so white banner text clears 4.5:1 at every
+     point (previously as low as 2.28:1 on Exploration).
+   - Stage kicker labels: switched from per-stage pastel tints to
+     uniform translucent white — guarantees contrast regardless
+     of which stage color sits beneath it.
+   - checkin-red renamed checkin-orange and recolored: matches
+     the 🟠 convention (was miscoded as red) and removes a
+     red/green colorblind collision with checkin-green.
+   ============================================================ */
+
+/* ============================================================
    AI LITERACY COURSE — GUIDE STYLESHEET
    Host this file at a stable URL, then add that URL in
    Codio: Courses → [course] → Course Details → CSS URLs → Save.
@@ -25,19 +38,19 @@
   font-family: Georgia, serif;
 }
 .stage-lo         { background: linear-gradient(135deg, #334155 0%, #475569 100%); }
-.stage-lo .stage-kicker         { color: #cbd5e1; }
+.stage-lo .stage-kicker         { color: rgba(255,255,255,0.85); }
 .stage-connection { background: linear-gradient(135deg, #92400e 0%, #b45309 100%); }
-.stage-connection .stage-kicker { color: #fde68a; }
-.stage-reading    { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
-.stage-reading .stage-kicker    { color: #bfdbfe; }
-.stage-exploration{ background: linear-gradient(135deg, #166534 0%, #22c55e 100%); }
-.stage-exploration .stage-kicker{ color: #bbf7d0; }
-.stage-activity   { background: linear-gradient(135deg, #6b21a8 0%, #a855f7 100%); }
-.stage-activity .stage-kicker   { color: #e9d5ff; }
-.stage-resolution { background: linear-gradient(135deg, #115e59 0%, #14b8a6 100%); }
-.stage-resolution .stage-kicker { color: #99f6e4; }
+.stage-connection .stage-kicker { color: rgba(255,255,255,0.85); }
+.stage-reading    { background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%); }
+.stage-reading .stage-kicker    { color: rgba(255,255,255,0.85); }
+.stage-exploration{ background: linear-gradient(135deg, #166534 0%, #15803d 100%); }
+.stage-exploration .stage-kicker{ color: rgba(255,255,255,0.85); }
+.stage-activity   { background: linear-gradient(135deg, #6b21a8 0%, #7e22ce 100%); }
+.stage-activity .stage-kicker   { color: rgba(255,255,255,0.85); }
+.stage-resolution { background: linear-gradient(135deg, #115e59 0%, #0f766e 100%); }
+.stage-resolution .stage-kicker { color: rgba(255,255,255,0.85); }
 .stage-assessment { background: linear-gradient(135deg, #7f1d1d 0%, #dc2626 100%); }
-.stage-assessment .stage-kicker { color: #fecaca; }
+.stage-assessment .stage-kicker { color: rgba(255,255,255,0.85); }
 
 /* ---------- CHAT BUBBLES ---------- */
 /* Outgoing = what the student types to the AI */
@@ -92,8 +105,8 @@
 .checkin-green { border-left: 5px solid #15803d; background: #f0fdf4; }
 .checkin-green .checkin-label { color: #15803d; }
 /* 🟠 graded assessment */
-.checkin-red   { border-left: 5px solid #b91c1c; background: #fef2f2; }
-.checkin-red .checkin-label   { color: #b91c1c; }
+.checkin-orange { border-left: 5px solid #c2410c; background: #fff7ed; }
+.checkin-orange .checkin-label { color: #c2410c; }
 
 /* ---------- CALLOUT BOXES ---------- */
 .box {
