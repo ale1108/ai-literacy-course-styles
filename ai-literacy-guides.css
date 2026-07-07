@@ -1,0 +1,213 @@
+/* ============================================================
+   AI LITERACY COURSE — GUIDE STYLESHEET
+   Host this file at a stable URL, then add that URL in
+   Codio: Courses → [course] → Course Details → CSS URLs → Save.
+   Applies to every assignment in the course automatically.
+   ============================================================ */
+
+/* ---------- STAGE BANNERS (one color family per stage) ---------- */
+.stage-banner {
+  border-radius: 12px;
+  padding: 20px 26px;
+  margin-bottom: 20px;
+}
+.stage-kicker {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.stage-title {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+}
+.stage-lo         { background: linear-gradient(135deg, #334155 0%, #475569 100%); }
+.stage-lo .stage-kicker         { color: #cbd5e1; }
+.stage-connection { background: linear-gradient(135deg, #92400e 0%, #b45309 100%); }
+.stage-connection .stage-kicker { color: #fde68a; }
+.stage-reading    { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
+.stage-reading .stage-kicker    { color: #bfdbfe; }
+.stage-exploration{ background: linear-gradient(135deg, #166534 0%, #22c55e 100%); }
+.stage-exploration .stage-kicker{ color: #bbf7d0; }
+.stage-activity   { background: linear-gradient(135deg, #6b21a8 0%, #a855f7 100%); }
+.stage-activity .stage-kicker   { color: #e9d5ff; }
+.stage-resolution { background: linear-gradient(135deg, #115e59 0%, #14b8a6 100%); }
+.stage-resolution .stage-kicker { color: #99f6e4; }
+.stage-assessment { background: linear-gradient(135deg, #7f1d1d 0%, #dc2626 100%); }
+.stage-assessment .stage-kicker { color: #fecaca; }
+
+/* ---------- CHAT BUBBLES ---------- */
+/* Outgoing = what the student types to the AI */
+.bubble-out {
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 18px 18px 4px 18px;
+  padding: 12px 18px;
+  margin: 12px 0 4px 25%;
+  font-size: 15px;
+}
+/* Incoming = what the AI sends back */
+.bubble-in {
+  background: #e5e7eb;
+  color: #1f2937;
+  border-radius: 18px 18px 18px 4px;
+  padding: 14px 18px;
+  margin: 12px 25% 4px 0;
+  font-size: 15px;
+}
+.bubble-caption {
+  text-align: right;
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0 4px 14px 0;
+}
+.bubble-caption-left {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0 0 14px 4px;
+}
+
+/* ---------- CHECK-IN CARDS ---------- */
+.checkin {
+  border-radius: 0 10px 10px 0;
+  padding: 14px 18px;
+  margin: 18px 0;
+}
+.checkin-label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.checkin p { margin: 0 0 8px 0; }
+.checkin p:last-child { margin-bottom: 0; }
+/* 🔵 personal recall / reflection — ungraded, saved */
+.checkin-blue  { border-left: 5px solid #1d4ed8; background: #eff6ff; }
+.checkin-blue .checkin-label  { color: #1d4ed8; }
+/* 🟢 comprehension check */
+.checkin-green { border-left: 5px solid #15803d; background: #f0fdf4; }
+.checkin-green .checkin-label { color: #15803d; }
+/* 🟠 graded assessment */
+.checkin-red   { border-left: 5px solid #b91c1c; background: #fef2f2; }
+.checkin-red .checkin-label   { color: #b91c1c; }
+
+/* ---------- CALLOUT BOXES ---------- */
+.box {
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin: 18px 0;
+}
+.box-label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.box p { margin: 8px 0 0 0; }
+/* neutral note */
+.box-note      { background: #f8fafc; border: 1px solid #e2e8f0; }
+.box-note .box-label      { color: #64748b; }
+/* primary LO statement on the objectives page */
+.box-objective { background: #eef4fb; border: 1px solid #bfdbfe; }
+.box-objective p:first-child { margin-top: 0; font-size: 17px; }
+.box-objective .box-fine  { font-size: 13px; color: #64748b; font-style: italic; }
+/* IMPORTANT (signature) */
+.box-important { background: #fff1f2; border: 1px solid #fda4af; }
+.box-important .box-label { color: #be123c; }
+/* WHAT HAPPENS IF YOU... (signature experiment push) */
+.box-whatif    { background: #fff7ed; border: 1px solid #fed7aa; }
+.box-whatif .box-label    { color: #9a3412; }
+/* FUN FACT (signature closer) */
+.box-funfact   { background: #fefce8; border: 1px solid #fde047; }
+.box-funfact .box-label   { color: #a16207; }
+/* centered rule/principle statement */
+.box-rule {
+  background: #f0fdfa;
+  border: 2px solid #14b8a6;
+  text-align: center;
+  padding: 16px 22px;
+}
+.box-rule p { margin: 0; font-size: 17px; }
+
+/* ---------- AUTHORING PLACEHOLDER (delete after inserting real block) ---------- */
+.insert-block {
+  border: 2px dashed #9ca3af;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 6px 0 18px 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* ---------- NUMBERED CHECKLIST ---------- */
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+.step-num {
+  background: #1e40af;
+  color: #ffffff;
+  border-radius: 50%;
+  min-width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 12px;
+}
+.step-num-alt { background: #b91c1c; }
+
+/* ---------- ACCENT LIST (un-bulleted emphasis list) ---------- */
+.accent-list {
+  border-left: 4px solid #94a3b8;
+  padding: 4px 18px;
+  margin: 14px 0;
+}
+.accent-list p { margin: 6px 0; }
+.accent-purple { border-left-color: #a855f7; }
+
+/* ---------- MONOSPACE PROMPT SAMPLES ---------- */
+.prompt-samples {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 6px 18px;
+  margin: 12px 0;
+  font-family: monospace;
+  font-size: 14px;
+  color: #334155;
+}
+.prompt-samples p { margin: 8px 0; }
+
+/* ---------- RISK LEVER CARDS (constraints / source boundary / verification) ---------- */
+.risk-card {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin: 8px 0;
+}
+.risk-card strong { color: #b91c1c; }
+.risk-card code, .risk-card .mono { font-family: monospace; font-size: 14px; }
+
+/* ---------- COLLAPSIBLE REVEAL ---------- */
+details.reveal {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin: 16px 0;
+}
+details.reveal summary {
+  font-weight: bold;
+  color: #4b5563;
+  cursor: pointer;
+}
